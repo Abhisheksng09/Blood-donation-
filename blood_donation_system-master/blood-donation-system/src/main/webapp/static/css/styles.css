@@ -1,0 +1,15 @@
+body { font-family: system-ui, Arial, sans-serif; margin:0; background:#f7f7fb; color:#222;}
+header { display:flex; align-items:center; justify-content:space-between; padding:16px 24px; background:white; box-shadow:0 1px 4px rgba(0,0,0,.06); }
+header h1, header h2 { margin:0; }
+nav a { margin-left:12px; text-decoration:none; color:#0b5ed7; }
+.hero { padding:48px 24px; text-align:center; }
+.card { background:white; padding:16px; margin:12px 0; border-radius:12px; box-shadow:0 1px 6px rgba(0,0,0,.08); }
+.grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; padding:16px; }
+.banner { background:#ffe8ec; padding:12px 24px; }
+.error { color:#b00020; background:#fdecee; padding:8px 12px; border-radius:8px; }
+.success { color:#0b6b2b; background:#e8f5ec; padding:8px 12px; border-radius:8px; }
+label { display:block; margin-top:10px; font-weight:600; }
+input, select { width:100%; padding:10px; border:1px solid #ddd; border-radius:8px; margin-top:4px; }
+button { margin-top:12px; padding:10px 14px; border:0; background:#e01e37; color:white; border-radius:10px; cursor:pointer; }
+.list { padding:0 16px; }
+footer { text-align:center; padding:20px; color:#666; }

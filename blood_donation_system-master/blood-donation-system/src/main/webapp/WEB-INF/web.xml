@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+  <display-name>Community Blood Donation System</display-name>
+
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.RegisterServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LogoutServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.LogoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LogoutServlet</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>BecomeDonorServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.BecomeDonorServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>BecomeDonorServlet</servlet-name>
+    <url-pattern>/become-donor</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>PostRequestServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.PostRequestServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PostRequestServlet</servlet-name>
+    <url-pattern>/post-request</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>ListRequestsServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.ListRequestsServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ListRequestsServlet</servlet-name>
+    <url-pattern>/requests</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>AemContentProxyServlet</servlet-name>
+    <servlet-class>com.community.blood.controller.AemContentProxyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AemContentProxyServlet</servlet-name>
+    <url-pattern>/aem/banner</url-pattern>
+  </servlet-mapping>
+
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+</web-app>
